@@ -1,6 +1,6 @@
 # Numgrid and other developments
 
-- [Slide deck](http://cicero.xyz/v3/remark/0.14.0/github.com/bast/talk-numgrid/talk.md/)
+- [Slide deck](http://cicero.xyz/v3/remark/0.14.0/github.com/bast/talk-numgrid/main/talk.md/)
 
 Slides served using [Cicero](http://cicero.xyz), which can be [run locally](https://github.com/bast/cicero).
 
