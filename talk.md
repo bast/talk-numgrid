@@ -31,6 +31,14 @@ class: center, middle
 
 ---
 
+## Space partitioning
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Approximate_Voronoi_Diagram.svg/600px-Approximate_Voronoi_Diagram.svg.png" style="width: 200px;"/>
+
+.cite[https://en.wikipedia.org/wiki/Voronoi_diagram (CC-BY-SA)]
+
+---
+
 class: center, middle, inverse
 
 # Why Rust?
@@ -95,13 +103,13 @@ class: center, middle, inverse
 
 ### Density evaluation (Python+Rust)
 
-- Goal: Python package for fast densities and density derivatives
+- Goal: Python package for .emph[fast and robust] densities and density derivatives
 - Status: Working on derivatives, to be released in 2021
 
 
 ### Exchange-correlation integration (Python+Rust)
 
-- Goal: Fast and robust code which can serve as reference implementation
+- Goal: Fast and robust code which can serve as .emph[reference implementation]
 - Status: Waiting for the density code to get ready, then relatively trivial
 
 ---
@@ -122,4 +130,4 @@ class: center, middle, inverse
 
 ### Density visualization
 
-- This is what I really want to get to. Super fast and easy to use.
+- This is what I really want to get to. Super fast and .emph[easy to use] (Python).
