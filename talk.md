@@ -166,23 +166,38 @@ class: center, middle, inverse
 
 ## Why [Rust](https://www.rust-lang.org/)?
 
-- .emph[Fast but also safe]
-- Memory safety
-- Thread safety
-- Type system and type safety
-- Zero cost abstractions
-- Compiler catches most errors (if it compiles, it often just works)
-- Compiler provides helpful error messages
-- Private and immutable by default
-- Great tooling (testing, documentation, auto-formatter, dependency management, package registry, no makefiles needed)
-- Community
+- First stable release, released in 2015
 - Most-loved programming language in the 2016, 2017, 2018, 2019, and 2020
   [Stack Overflow annual surveys](https://insights.stackoverflow.com/survey/)
 
+- .emph[Fast but also safe]
+
+- Memory safety
+
+- Thread safety
+
+- Type system and type safety
+
+- Zero cost abstractions
+
+- Compiler catches most errors (if it compiles, it often just works)
+
+- Compiler provides helpful error messages
+
+- Private and immutable by default
+
+- Great tooling (testing, documentation, auto-formatter, dependency management, package registry, no makefiles needed)
+
+---
+
+## Why [Rust](https://www.rust-lang.org/)?
 
 ### More reading
 
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+
 - More info and resources: https://github.com/dev-cafe/rust-demo
+
 - [J. M. Perkel, "Why scientists are turning to Rust", Nature 588, 185-186 (2020)](https://doi.org/10.1038/d41586-020-03382-2)
 
 ---
