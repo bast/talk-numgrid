@@ -40,11 +40,111 @@ class: center, middle
 
 ---
 
+## Approximation by numerical quadrature
+
+`$$ I = \int f(\mathbf r) d \mathbf r \approx \sum_i^n w_i f(\mathbf r_i) $$`
+
+- `\( \mathbf r_i \)`: grid coordinates/roots/abscissas
+- `\( w_i \)`: grid weights
+
+`$$ I_A \approx \sum_{i \in A}^n
+                w_i^\text{partitioning} (\{\mathbf R\})
+                w_i^\text{radial} w_i^\text{angular}
+                f(\mathbf r_i) $$`
+
+
+### In addition to basis set and functional, we have 3 additional dials
+
+- Radial grid
+- Angular grid
+- Space partitioning
+
+---
+
+## Radial grid
+
+### There are many schemes
+
+- Lindh-Malmqvist-Gagliardi, https://dx.doi.org/10.1007/s002140100263
+- Krack-Köster, https://doi.org/10.1063/1.475719
+- MultiExp, https://doi.org/10.1002/jcc.10211
+- Treutler-Ahlrichs, https://doi.org/10.1063/1.469408
+- Mura-Knowles, https://doi.org/10.1063/1.471749
+
+
+### Notes
+
+- Some are basis set dependent, some are not
+- The grid has an extent (example: Ne, aug-cc-pVTZ)
+  - LMG (164 points): ... to ... bohr
+  - KK (164 points): ... to ... bohr
+- If there is no grid, XC does not "see" anything
+- Basis set-dependent grids: be careful when estimating BSSE
+
+---
+
+## Angular grid (1/2)
+
+- Lebedev, [series of papers](https://people.sc.fsu.edu/~jburkardt/c_src/sphere_lebedev_rule/sphere_lebedev_rule.html)
+
+- Tabulated: {6,    14,   26,   38,   50,   74,   86,   110,  146,
+  170,  194,  230,  266,  302,  350,  434,  590,  770,
+  974,  1202, 1454, 1730, 2030, 2354, 2702, 3074, 3470,
+  3890, 4334, 4802, 5294, 5810} points on unit sphere
+
+- They have a well defined accuracy in terms of angular momentum
+
+<img src="img/bowls.jpg" style="width: 50%;"/>
+
+---
+
+## Angular grid (2/2)
+
+- If you integrate a closed-shell atom in vacuum, without external fields, you don't need many angular points
+
+- Pruning: atom centers are more "spherical" closer to the center
+
+- There are adaptive schemes, see for instance
+  Krack-Köster, https://doi.org/10.1063/1.475719
+
+<img src="img/bowls.jpg" style="width: 50%;"/>
+
+---
+
 ## Space partitioning
 
+.left-column40[
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Approximate_Voronoi_Diagram.svg/600px-Approximate_Voronoi_Diagram.svg.png" style="width: 200px;"/>
-
 .cite[https://en.wikipedia.org/wiki/Voronoi_diagram (CC-BY-SA)]
+]
+.right-column60[
+- Becke, https://dx.doi.org/10.1063/1.454033
+- Stratmann-Scuseria-Frisch, https://doi.org/10.1016/0009-2614(96)00600-8
+- Laqua-Kussmann-Ochsenfeld, section III.C of https://doi.org/10.1063/1.5049435
+]
+
+`$$ I_A \approx \sum_{i \in A}^n
+                w_i^\text{partitioning} (\{\mathbf R\})
+                w_i^\text{radial} w_i^\text{angular}
+                f(\mathbf r_i) $$`
+
+
+### Two things to remember
+
+- Scaling with system size enters here
+- Grid weight derivatives can enter here
+
+---
+
+## Lessons learned
+
+- We are trained to calibrate Hamiltonian, basis set, functional/correlation
+
+- .emph[Always calibrate the grid] for one system before computing the whole table of numbers/functionals/molecules/...
+
+- It can be difficult to say whether a grid is appropriate but it can be easy to check whether it is not
+
+- Report the grid that you are using
 
 ---
 
@@ -99,7 +199,7 @@ class: center, middle, inverse
 
 class: center, middle, inverse
 
-# The future
+# The future (?)
 
 ---
 
