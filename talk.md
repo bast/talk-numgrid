@@ -19,6 +19,7 @@ class: center, middle
 # Plan
 
 .left-column60[
+### - History
 ### - How molecular integration grids work
 ### - Numgrid: https://github.com/dftlibs/numgrid
 ### - Demonstration
@@ -28,6 +29,14 @@ class: center, middle
 .right-column40[
 <img src="img/avatar.jpeg" style="width: 50%;"/>
 ]
+
+---
+
+## History: why writing the 58th numerical grid code?
+
+- In [OpenRSP](https://github.com/openrsp/openrsp) (ca. 2013) we needed a numerical grid which had an .emph[open source license]
+
+- My goal now is to create a tool that is .emph[easy to install and use]
 
 ---
 
@@ -76,6 +85,9 @@ class: center, middle, inverse
 .quote["How about math/scientific libraries?"]
 - It has very good inter-op with C (and Python) so you can link to any C interface.
 
+.quote["Do we need to rewrite everything now?"]
+- No. You can interface to Fortran via `iso_c_binding`.
+
 .quote["How about shared-memory parallelization?"]
 - Very easy to do. And thread safe.
 
@@ -95,7 +107,7 @@ class: center, middle, inverse
 
 ### Numerical integration (Python+Rust)
 
-- Future: simpler API, geometric weight derivatives (using automatic differentiation)
+- Future:
   - [Support for more quadratures](https://github.com/dftlibs/numgrid/issues/43)
   - Simpler API
   - Geometric weight derivatives (using automatic differentiation)
