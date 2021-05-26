@@ -164,7 +164,7 @@ class: center, middle, inverse
 
 ---
 
-## Why [Rust](https://www.rust-lang.org/)?
+## Why [Rust](https://www.rust-lang.org/)? (1/2)
 
 - First stable release, released in 2015
 - Most-loved programming language in the 2016, 2017, 2018, 2019, and 2020
@@ -178,6 +178,10 @@ class: center, middle, inverse
 
 - Type system and type safety
 
+---
+
+## Why [Rust](https://www.rust-lang.org/)? (2/2)
+
 - Zero cost abstractions
 
 - Compiler catches most errors (if it compiles, it often just works)
@@ -188,9 +192,6 @@ class: center, middle, inverse
 
 - Great tooling (testing, documentation, auto-formatter, dependency management, package registry, no makefiles needed)
 
----
-
-## Why [Rust](https://www.rust-lang.org/)?
 
 ### More reading
 
@@ -202,22 +203,22 @@ class: center, middle, inverse
 
 ---
 
-## Why [Rust](https://www.rust-lang.org/)?
+## Why [Rust](https://www.rust-lang.org/)? (FAQ)
 
 .quote["But is it as fast as Fortran/C/C++?"]
-- Yes!
+- **Yes!**
 
 .quote["How about math/scientific libraries?"]
-- It has very good inter-op with C (and Python) so you can link to any C interface.
+- **No problem**. It has very good inter-op with C (and Python) so you can link to any C interface.
 
 .quote["Do we need to rewrite everything now?"]
-- No. You can interface to Fortran via `iso_c_binding`.
+- **No**. Rust can interface to Fortran via `iso_c_binding`.
 
 .quote["How about shared-memory parallelization?"]
-- Very easy to do. And thread safe.
+- **Easier**. And thread safe.
 
 .quote["How about MPI?"]
-- A bit early for this. I would do the MPI layer with Python/C/C++/Fortran and
+- A **bit too early** for this. I would do the MPI layer with Python/C/C++/Fortran and
   the intra-node with Rust.
 
 ---
