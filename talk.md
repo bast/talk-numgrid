@@ -75,9 +75,13 @@ class: center, middle
 ### Notes
 
 - Some are basis set dependent, some are not
-- The grid has an extent (example: Ne, aug-cc-pVTZ)
-  - LMG (164 points): ... to ... bohr
-  - KK (164 points): ... to ... bohr
+
+--
+
+- The grid has an extent (example: Ne, aug-cc-pVDZ)
+  - LMG (112 points): 1.2e-6 to 21.5 bohr
+  - KK (112 points): 4.1e-9 to 28.4 bohr
+
 - If there is no grid, XC does not "see" anything
 - Basis set-dependent grids: be careful when estimating BSSE
 
