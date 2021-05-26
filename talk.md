@@ -150,6 +150,16 @@ class: center, middle
 
 class: center, middle, inverse
 
+# Demo time
+
+## https://github.com/dftlibs/numgrid
+
+You can test it out as well
+
+---
+
+class: center, middle, inverse
+
 # Why Rust?
 
 ---
