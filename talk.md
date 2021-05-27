@@ -34,7 +34,8 @@ class: center, middle
 
 ## History: why writing the 58th numerical grid code?
 
-- In [OpenRSP](https://github.com/openrsp/openrsp) (ca. 2013) we needed a numerical grid which had an .emph[open source license]
+- In [OpenRSP](https://github.com/openrsp/openrsp) (ca. 2014)
+  we needed a numerical grid which had an .emph[open source license]
 
 - My goal now is to create a tool that is .emph[easy to install and use]
 
