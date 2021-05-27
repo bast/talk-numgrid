@@ -107,7 +107,7 @@ class: center, middle
 
 - If you integrate a closed-shell atom in vacuum, without external fields, you don't need many angular points
 
-- Pruning: atom centers are more "spherical" closer to the center
+- Pruning: density is more "spherical" closer to the center
 
 - There are adaptive schemes, see for instance
   Krack-Köster, https://doi.org/10.1063/1.475719
