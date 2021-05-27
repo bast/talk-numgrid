@@ -170,7 +170,7 @@ class: center, middle, inverse
 
 ## Why [Rust](https://www.rust-lang.org/)? (1/2)
 
-- First stable release, released in 2015
+- First stable release: 2015
 - Most-loved programming language in the 2016, 2017, 2018, 2019, and 2020
   [Stack Overflow annual surveys](https://insights.stackoverflow.com/survey/)
 
